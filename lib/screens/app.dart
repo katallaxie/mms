@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:macos_ui/macos_ui.dart';
 
 import 'package:mms/blocs/blocs.dart';
 import 'package:mms/router/router.dart';
 
 export 'home/home.dart';
+export 'dashboard/dashboard.dart';
 export 'root/root.dart';
 
 class CustomApp extends StatelessWidget {
@@ -12,14 +14,11 @@ class CustomApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiRepositoryProvider(
-      providers: [],
-      child: MultiBlocProvider(
-        providers: [
-          BlocProvider(create: (context) => SettingsBloc()),
-        ],
-        child: const _CustomAppView(),
-      ),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => SettingsBloc()),
+      ],
+      child: const _CustomAppView(),
     );
   }
 }
@@ -34,7 +33,7 @@ class _CustomAppView extends StatelessWidget {
     final rootRouter = RootRouter(key: routerKey);
 
     return BlocBuilder<SettingsBloc, SettingsState>(builder: (context, state) {
-      return MaterialApp.router(
+      return MacosApp.router(
         routerConfig: rootRouter.config(),
         debugShowCheckedModeBanner: false,
         themeMode: state.isSystemBrightness
@@ -42,6 +41,8 @@ class _CustomAppView extends StatelessWidget {
             : state.isDarkMode
                 ? ThemeMode.dark
                 : ThemeMode.light,
+        theme: MacosThemeData.light(),
+        darkTheme: MacosThemeData.dark(),
         title: "MMS",
         localizationsDelegates: const [
           // AppLocalizations.delegate, // Add this line

@@ -11,6 +11,7 @@ export 'root/root.dart';
 export 'privileges/privileges.dart';
 export 'settings/settings.dart';
 export 'support/support.dart';
+export 'setup/setup.dart';
 
 class CustomApp extends StatelessWidget {
   const CustomApp({super.key});

@@ -18,6 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$SettingsEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
     required TResult Function() toggleSystemBrightness,
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
@@ -26,6 +27,7 @@ mixin _$SettingsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
     TResult? Function()? toggleSystemBrightness,
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
@@ -34,6 +36,7 @@ mixin _$SettingsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
     TResult Function()? toggleSystemBrightness,
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
@@ -43,6 +46,7 @@ mixin _$SettingsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
     required TResult Function(SettingsEventToggleSystemBrightness value)
         toggleSystemBrightness,
     required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
@@ -54,6 +58,7 @@ mixin _$SettingsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult? Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -63,6 +68,7 @@ mixin _$SettingsEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -89,6 +95,134 @@ class _$SettingsEventCopyWithImpl<$Res, $Val extends SettingsEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$SettingsEventIsFirstLaunchImplCopyWith<$Res> {
+  factory _$$SettingsEventIsFirstLaunchImplCopyWith(
+          _$SettingsEventIsFirstLaunchImpl value,
+          $Res Function(_$SettingsEventIsFirstLaunchImpl) then) =
+      __$$SettingsEventIsFirstLaunchImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SettingsEventIsFirstLaunchImplCopyWithImpl<$Res>
+    extends _$SettingsEventCopyWithImpl<$Res, _$SettingsEventIsFirstLaunchImpl>
+    implements _$$SettingsEventIsFirstLaunchImplCopyWith<$Res> {
+  __$$SettingsEventIsFirstLaunchImplCopyWithImpl(
+      _$SettingsEventIsFirstLaunchImpl _value,
+      $Res Function(_$SettingsEventIsFirstLaunchImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
+  const _$SettingsEventIsFirstLaunchImpl();
+
+  @override
+  String toString() {
+    return 'SettingsEvent.isFirsLauch()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SettingsEventIsFirstLaunchImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
+    required TResult Function() toggleSystemBrightness,
+    required TResult Function() toggleDarkMode,
+    required TResult Function() toggleCrashlytics,
+    required TResult Function() toggleAnalytics,
+  }) {
+    return isFirsLauch();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
+    TResult? Function()? toggleSystemBrightness,
+    TResult? Function()? toggleDarkMode,
+    TResult? Function()? toggleCrashlytics,
+    TResult? Function()? toggleAnalytics,
+  }) {
+    return isFirsLauch?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
+    TResult Function()? toggleSystemBrightness,
+    TResult Function()? toggleDarkMode,
+    TResult Function()? toggleCrashlytics,
+    TResult Function()? toggleAnalytics,
+    required TResult orElse(),
+  }) {
+    if (isFirsLauch != null) {
+      return isFirsLauch();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
+    required TResult Function(SettingsEventToggleSystemBrightness value)
+        toggleSystemBrightness,
+    required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
+    required TResult Function(SettingsEventToggleCrashlytics value)
+        toggleCrashlytics,
+    required TResult Function(SettingsEventToggleAnalytics value)
+        toggleAnalytics,
+  }) {
+    return isFirsLauch(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
+    TResult? Function(SettingsEventToggleSystemBrightness value)?
+        toggleSystemBrightness,
+    TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
+    TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
+    TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+  }) {
+    return isFirsLauch?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
+    TResult Function(SettingsEventToggleSystemBrightness value)?
+        toggleSystemBrightness,
+    TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
+    TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
+    TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    required TResult orElse(),
+  }) {
+    if (isFirsLauch != null) {
+      return isFirsLauch(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SettingsEventIsFirstLaunch implements SettingsEvent {
+  const factory SettingsEventIsFirstLaunch() = _$SettingsEventIsFirstLaunchImpl;
 }
 
 /// @nodoc
@@ -134,6 +268,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
     required TResult Function() toggleSystemBrightness,
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
@@ -145,6 +280,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
     TResult? Function()? toggleSystemBrightness,
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
@@ -156,6 +292,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
     TResult Function()? toggleSystemBrightness,
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
@@ -171,6 +308,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
     required TResult Function(SettingsEventToggleSystemBrightness value)
         toggleSystemBrightness,
     required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
@@ -185,6 +323,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult? Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -197,6 +336,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -257,6 +397,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
     required TResult Function() toggleSystemBrightness,
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
@@ -268,6 +409,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
     TResult? Function()? toggleSystemBrightness,
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
@@ -279,6 +421,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
     TResult Function()? toggleSystemBrightness,
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
@@ -294,6 +437,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
     required TResult Function(SettingsEventToggleSystemBrightness value)
         toggleSystemBrightness,
     required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
@@ -308,6 +452,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult? Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -320,6 +465,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -382,6 +528,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
     required TResult Function() toggleSystemBrightness,
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
@@ -393,6 +540,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
     TResult? Function()? toggleSystemBrightness,
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
@@ -404,6 +552,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
     TResult Function()? toggleSystemBrightness,
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
@@ -419,6 +568,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
     required TResult Function(SettingsEventToggleSystemBrightness value)
         toggleSystemBrightness,
     required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
@@ -433,6 +583,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult? Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -445,6 +596,7 @@ class _$SettingsEventToggleCrashlyticsImpl
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -507,6 +659,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
     required TResult Function() toggleSystemBrightness,
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
@@ -518,6 +671,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
     TResult? Function()? toggleSystemBrightness,
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
@@ -529,6 +683,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
     TResult Function()? toggleSystemBrightness,
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
@@ -544,6 +699,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
     required TResult Function(SettingsEventToggleSystemBrightness value)
         toggleSystemBrightness,
     required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
@@ -558,6 +714,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult? Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -570,6 +727,7 @@ class _$SettingsEventToggleAnalyticsImpl
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
     TResult Function(SettingsEventToggleSystemBrightness value)?
         toggleSystemBrightness,
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
@@ -599,6 +757,7 @@ mixin _$SettingsState {
   bool get isDarkMode => throw _privateConstructorUsedError;
   bool get enableCrashlytics => throw _privateConstructorUsedError;
   bool get enableAnalytics => throw _privateConstructorUsedError;
+  bool get isFirstLaunch => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -616,7 +775,8 @@ abstract class $SettingsStateCopyWith<$Res> {
       {bool isSystemBrightness,
       bool isDarkMode,
       bool enableCrashlytics,
-      bool enableAnalytics});
+      bool enableAnalytics,
+      bool isFirstLaunch});
 }
 
 /// @nodoc
@@ -636,6 +796,7 @@ class _$SettingsStateCopyWithImpl<$Res, $Val extends SettingsState>
     Object? isDarkMode = null,
     Object? enableCrashlytics = null,
     Object? enableAnalytics = null,
+    Object? isFirstLaunch = null,
   }) {
     return _then(_value.copyWith(
       isSystemBrightness: null == isSystemBrightness
@@ -654,6 +815,10 @@ class _$SettingsStateCopyWithImpl<$Res, $Val extends SettingsState>
           ? _value.enableAnalytics
           : enableAnalytics // ignore: cast_nullable_to_non_nullable
               as bool,
+      isFirstLaunch: null == isFirstLaunch
+          ? _value.isFirstLaunch
+          : isFirstLaunch // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 }
@@ -670,7 +835,8 @@ abstract class _$$SettingsStateImplCopyWith<$Res>
       {bool isSystemBrightness,
       bool isDarkMode,
       bool enableCrashlytics,
-      bool enableAnalytics});
+      bool enableAnalytics,
+      bool isFirstLaunch});
 }
 
 /// @nodoc
@@ -688,6 +854,7 @@ class __$$SettingsStateImplCopyWithImpl<$Res>
     Object? isDarkMode = null,
     Object? enableCrashlytics = null,
     Object? enableAnalytics = null,
+    Object? isFirstLaunch = null,
   }) {
     return _then(_$SettingsStateImpl(
       isSystemBrightness: null == isSystemBrightness
@@ -706,6 +873,10 @@ class __$$SettingsStateImplCopyWithImpl<$Res>
           ? _value.enableAnalytics
           : enableAnalytics // ignore: cast_nullable_to_non_nullable
               as bool,
+      isFirstLaunch: null == isFirstLaunch
+          ? _value.isFirstLaunch
+          : isFirstLaunch // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -717,7 +888,8 @@ class _$SettingsStateImpl implements _SettingsState {
       {required this.isSystemBrightness,
       required this.isDarkMode,
       required this.enableCrashlytics,
-      required this.enableAnalytics});
+      required this.enableAnalytics,
+      required this.isFirstLaunch});
 
   factory _$SettingsStateImpl.fromJson(Map<String, dynamic> json) =>
       _$$SettingsStateImplFromJson(json);
@@ -730,10 +902,12 @@ class _$SettingsStateImpl implements _SettingsState {
   final bool enableCrashlytics;
   @override
   final bool enableAnalytics;
+  @override
+  final bool isFirstLaunch;
 
   @override
   String toString() {
-    return 'SettingsState(isSystemBrightness: $isSystemBrightness, isDarkMode: $isDarkMode, enableCrashlytics: $enableCrashlytics, enableAnalytics: $enableAnalytics)';
+    return 'SettingsState(isSystemBrightness: $isSystemBrightness, isDarkMode: $isDarkMode, enableCrashlytics: $enableCrashlytics, enableAnalytics: $enableAnalytics, isFirstLaunch: $isFirstLaunch)';
   }
 
   @override
@@ -748,13 +922,15 @@ class _$SettingsStateImpl implements _SettingsState {
             (identical(other.enableCrashlytics, enableCrashlytics) ||
                 other.enableCrashlytics == enableCrashlytics) &&
             (identical(other.enableAnalytics, enableAnalytics) ||
-                other.enableAnalytics == enableAnalytics));
+                other.enableAnalytics == enableAnalytics) &&
+            (identical(other.isFirstLaunch, isFirstLaunch) ||
+                other.isFirstLaunch == isFirstLaunch));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, isSystemBrightness, isDarkMode,
-      enableCrashlytics, enableAnalytics);
+      enableCrashlytics, enableAnalytics, isFirstLaunch);
 
   @JsonKey(ignore: true)
   @override
@@ -775,7 +951,8 @@ abstract class _SettingsState implements SettingsState {
       {required final bool isSystemBrightness,
       required final bool isDarkMode,
       required final bool enableCrashlytics,
-      required final bool enableAnalytics}) = _$SettingsStateImpl;
+      required final bool enableAnalytics,
+      required final bool isFirstLaunch}) = _$SettingsStateImpl;
 
   factory _SettingsState.fromJson(Map<String, dynamic> json) =
       _$SettingsStateImpl.fromJson;
@@ -788,6 +965,8 @@ abstract class _SettingsState implements SettingsState {
   bool get enableCrashlytics;
   @override
   bool get enableAnalytics;
+  @override
+  bool get isFirstLaunch;
   @override
   @JsonKey(ignore: true)
   _$$SettingsStateImplCopyWith<_$SettingsStateImpl> get copyWith =>

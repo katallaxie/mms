@@ -7,6 +7,7 @@ sealed class SettingsState with _$SettingsState {
     required bool isDarkMode,
     required bool enableCrashlytics,
     required bool enableAnalytics,
+    required bool isFirstLaunch,
   }) = _SettingsState;
 
   factory SettingsState.empty() => SettingsState(
@@ -14,6 +15,7 @@ sealed class SettingsState with _$SettingsState {
         isDarkMode: false,
         enableCrashlytics: true,
         enableAnalytics: true,
+        isFirstLaunch: true,
       );
 
   factory SettingsState.fromJson(Map<String, dynamic> json) =>

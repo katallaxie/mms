@@ -12,6 +12,7 @@ _$SettingsStateImpl _$$SettingsStateImplFromJson(Map<String, dynamic> json) =>
       isDarkMode: json['isDarkMode'] as bool,
       enableCrashlytics: json['enableCrashlytics'] as bool,
       enableAnalytics: json['enableAnalytics'] as bool,
+      isFirstLaunch: json['isFirstLaunch'] as bool,
     );
 
 Map<String, dynamic> _$$SettingsStateImplToJson(_$SettingsStateImpl instance) =>
@@ -20,4 +21,5 @@ Map<String, dynamic> _$$SettingsStateImplToJson(_$SettingsStateImpl instance) =>
       'isDarkMode': instance.isDarkMode,
       'enableCrashlytics': instance.enableCrashlytics,
       'enableAnalytics': instance.enableAnalytics,
+      'isFirstLaunch': instance.isFirstLaunch,
     };

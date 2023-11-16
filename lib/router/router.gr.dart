@@ -33,10 +33,34 @@ abstract class _$RootRouter extends RootStackRouter {
         child: const HomeScreen(),
       );
     },
+    PrivilegesRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const PrivilegesScreen(),
+      );
+    },
     RootRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const RootScreen(),
+      );
+    },
+    SettingsRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SettingsScreen(),
+      );
+    },
+    SetupRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SetupScreen(),
+      );
+    },
+    SupportRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SupportScreen(),
       );
     },
   };
@@ -85,6 +109,20 @@ class HomeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [PrivilegesScreen]
+class PrivilegesRoute extends PageRouteInfo<void> {
+  const PrivilegesRoute({List<PageRouteInfo>? children})
+      : super(
+          PrivilegesRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PrivilegesRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [RootScreen]
 class RootRoute extends PageRouteInfo<void> {
   const RootRoute({List<PageRouteInfo>? children})
@@ -94,6 +132,48 @@ class RootRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'RootRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SettingsScreen]
+class SettingsRoute extends PageRouteInfo<void> {
+  const SettingsRoute({List<PageRouteInfo>? children})
+      : super(
+          SettingsRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SettingsRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SetupScreen]
+class SetupRoute extends PageRouteInfo<void> {
+  const SetupRoute({List<PageRouteInfo>? children})
+      : super(
+          SetupRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SetupRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SupportScreen]
+class SupportRoute extends PageRouteInfo<void> {
+  const SupportRoute({List<PageRouteInfo>? children})
+      : super(
+          SupportRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SupportRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

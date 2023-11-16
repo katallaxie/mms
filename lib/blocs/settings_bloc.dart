@@ -12,6 +12,14 @@ class SettingsBloc extends HydratedBloc<SettingsEvent, SettingsState> {
     on<SettingsEventToggleDarkMode>(_onToggleDarkMode);
     on<SettingsEventToggleCrashlytics>(_onToggleCrashlytics);
     on<SettingsEventToggleAnalytics>(_onToggleAnalytics);
+    on<SettingsEventIsFirstLaunch>(_onIsFirsLaunch);
+  }
+
+  void _onIsFirsLaunch(
+    SettingsEventIsFirstLaunch event,
+    Emitter<SettingsState> emit,
+  ) {
+    emit(state.copyWith(isFirstLaunch: false));
   }
 
   void _onToggleSystemBrightness(

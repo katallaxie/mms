@@ -13,23 +13,28 @@ class RootRouter extends _$RootRouter {
 
   @override
   late List<AutoRoute> routes = [
+    // AdaptiveRoute(
+    //   page: RootRoute.page,
+    //   path: '/',
+    //   children: [
+    //     RedirectRoute(path: '', redirectTo: 'home'),
+    //     AdaptiveRoute(
+    //       page: HomeRouterRoute.page,
+    //       path: 'home',
+    //       children: [
+    //         AdaptiveRoute(
+    //           path: '',
+    //           page: HomeRoute.page,
+    //           // initial: true,
+    //         ),
+    //       ],
+    //     ),
+    //   ],
+    // ),
     AdaptiveRoute(
-      page: RootRoute.page,
-      path: '/',
-      children: [
-        RedirectRoute(path: '', redirectTo: 'home'),
-        AdaptiveRoute(
-          page: HomeRouterRoute.page,
-          path: 'home',
-          children: [
-            AdaptiveRoute(
-              path: '',
-              page: HomeRoute.page,
-              initial: true,
-            ),
-          ],
-        ),
-      ],
+      page: SetupRoute.page,
+      path: '/setup',
+      initial: true,
     ),
     RedirectRoute(path: '*', redirectTo: '/'),
   ];

@@ -83,7 +83,7 @@ flutter:
   uses-material-design: true
 
   # The following section is specific to Flutter.
-  generate: true
+  # generate: true
 
   # To add assets to your application, add an assets section, like this:
   assets:

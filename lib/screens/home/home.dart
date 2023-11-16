@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
 import 'package:macos_ui/macos_ui.dart';
 import 'package:mms/screens/app.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
@@ -102,6 +103,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   leading: MacosIcon(CupertinoIcons.lock),
                   label: Text('Privileges'),
                 ),
+                SidebarItem(
+                  leading: MacosIcon(CupertinoIcons.phone),
+                  label: Text('Support'),
+                ),
               ],
             );
           },
@@ -125,6 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: [
           CupertinoTabView(builder: (_) => const DashboardScreen()),
           const PrivilegesScreen(),
+          const SupportScreen(),
         ][pageIndex],
       ),
     );

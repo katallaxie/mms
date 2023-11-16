@@ -3,23 +3,23 @@ import 'package:auto_route/auto_route.dart';
 import 'package:macos_ui/macos_ui.dart';
 
 @RoutePage()
-class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+class SupportScreen extends StatelessWidget {
+  const SupportScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const DashboardScreenView();
+    return const SupportScreenView();
   }
 }
 
-class DashboardScreenView extends StatelessWidget {
-  const DashboardScreenView({Key? key}) : super(key: key);
+class SupportScreenView extends StatelessWidget {
+  const SupportScreenView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MacosScaffold(
         toolBar: ToolBar(
-          title: const Text('Dashboard'),
+          title: const Text('Support'),
           titleWidth: 150.0,
           leading: MacosTooltip(
             message: 'Toggle Sidebar',
@@ -49,7 +49,7 @@ class DashboardScreenView extends StatelessWidget {
                 padding: EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [Text("Dashboard")],
+                  children: [Text("Support")],
                 ));
           }),
         ]);

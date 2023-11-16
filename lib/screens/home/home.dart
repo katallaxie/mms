@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:macos_ui/macos_ui.dart';
-
-import 'package:mms/screens/dashboard/dashboard.dart';
+import 'package:mms/screens/app.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
 
 import 'platform_menus.dart';
 
@@ -88,82 +88,19 @@ class _HomeScreenState extends State<HomeScreen> {
           builder: (context, scrollController) {
             return SidebarItems(
               currentIndex: pageIndex,
-              onChanged: (i) {},
+              onChanged: (i) {
+                setState(() => pageIndex = i);
+              },
               scrollController: scrollController,
               itemSize: SidebarItemSize.large,
               items: const [
                 SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage('assets/sf_symbols/button_programmable_2x.png'),
-                  ),
-                  label: Text('Buttons'),
+                  leading: MacosIcon(CupertinoIcons.person),
+                  label: Text('Dashboard'),
                 ),
                 SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage(
-                      'assets/sf_symbols/lines_measurement_horizontal_2x.png',
-                    ),
-                  ),
-                  label: Text('Indicators'),
-                ),
-                SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage(
-                      'assets/sf_symbols/character_cursor_ibeam_2x.png',
-                    ),
-                  ),
-                  label: Text('Fields'),
-                ),
-                SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage('assets/sf_symbols/rectangle_3_group_2x.png'),
-                  ),
-                  label: Text('Colors'),
-                ),
-                SidebarItem(
-                  leading: MacosIcon(CupertinoIcons.square_on_square),
-                  label: Text('Dialogs & Sheets'),
-                ),
-                SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage(
-                      'assets/sf_symbols/macwindow.on.rectangle_2x.png',
-                    ),
-                  ),
-                  label: Text('Layout'),
-                  disclosureItems: [
-                    SidebarItem(
-                      leading: MacosIcon(CupertinoIcons.macwindow),
-                      label: Text('Toolbar'),
-                    ),
-                    SidebarItem(
-                      leading: MacosImageIcon(
-                        AssetImage(
-                          'assets/sf_symbols/menubar.rectangle_2x.png',
-                        ),
-                      ),
-                      label: Text('SliverToolbar'),
-                    ),
-                    SidebarItem(
-                      leading: MacosIcon(CupertinoIcons.uiwindow_split_2x1),
-                      label: Text('TabView'),
-                    ),
-                    SidebarItem(
-                      leading: MacosIcon(CupertinoIcons.rectangle_split_3x1),
-                      label: Text('ResizablePane'),
-                    ),
-                  ],
-                ),
-                SidebarItem(
-                  leading: MacosImageIcon(
-                    AssetImage(
-                        'assets/sf_symbols/filemenu_and_selection_2x.png'),
-                  ),
-                  label: Text('Selectors'),
-                ),
-                SidebarItem(
-                  leading: MacosIcon(CupertinoIcons.textformat_size),
-                  label: Text('Typography'),
+                  leading: MacosIcon(CupertinoIcons.lock),
+                  label: Text('Privileges'),
                 ),
               ],
             );
@@ -185,7 +122,10 @@ class _HomeScreenState extends State<HomeScreen> {
             );
           },
         ),
-        child: [const DashboardScreen()][pageIndex],
+        child: [
+          CupertinoTabView(builder: (_) => const DashboardScreen()),
+          const PrivilegesScreen(),
+        ][pageIndex],
       ),
     );
   }

@@ -8,6 +8,8 @@ import 'package:mms/router/router.dart';
 export 'home/home.dart';
 export 'dashboard/dashboard.dart';
 export 'root/root.dart';
+export 'privileges/privileges.dart';
+export 'settings/settings.dart';
 
 class CustomApp extends StatelessWidget {
   const CustomApp({super.key});

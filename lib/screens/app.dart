@@ -13,6 +13,7 @@ export 'settings/settings.dart';
 export 'support/support.dart';
 export 'setup/setup.dart';
 export 'developer/developer.dart';
+export 'device/device.dart';
 
 class CustomApp extends StatelessWidget {
   const CustomApp({super.key});
@@ -22,6 +23,8 @@ class CustomApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => SettingsBloc()),
+        BlocProvider(
+            create: (context) => DeviceBloc()..add(const DeviceEventUpdate())),
       ],
       child: const _CustomAppView(),
     );

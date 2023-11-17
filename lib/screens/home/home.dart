@@ -104,6 +104,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   label: Text('Privileges'),
                 ),
                 SidebarItem(
+                  leading: MacosIcon(CupertinoIcons.device_laptop),
+                  label: Text('Device'),
+                ),
+                SidebarItem(
                   leading: MacosIcon(CupertinoIcons.phone),
                   label: Text('Support'),
                 ),
@@ -134,6 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: [
           CupertinoTabView(builder: (_) => const DashboardScreen()),
           const PrivilegesScreen(),
+          const DeviceScreen(),
           const SupportScreen(),
           const DeveloperScreen()
         ][pageIndex],

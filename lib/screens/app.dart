@@ -34,7 +34,8 @@ class _CustomAppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final rootRouter = RootRouter(key: routerKey);
+    final rootRouter =
+        RootRouter(key: routerKey, settingsBloc: context.read<SettingsBloc>());
 
     return BlocBuilder<SettingsBloc, SettingsState>(builder: (context, state) {
       return MacosApp.router(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:macos_ui/macos_ui.dart';
+import 'package:mms/blocs/blocs.dart';
 
 @RoutePage()
 class SetupScreen extends StatelessWidget {
@@ -33,8 +35,10 @@ class SetupScreenView extends StatelessWidget {
                 ],
               ),
               PushButton(
-                  onPressed: () => {},
                   child: const Text("Getting Started"),
+                  onPressed: () => context
+                      .read<SettingsBloc>()
+                      .add(const SettingsEventIsFirstLaunch()),
                   controlSize: ControlSize.regular)
             ],
           ),

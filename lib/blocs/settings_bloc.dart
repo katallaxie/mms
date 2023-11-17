@@ -13,6 +13,7 @@ class SettingsBloc extends HydratedBloc<SettingsEvent, SettingsState> {
     on<SettingsEventToggleCrashlytics>(_onToggleCrashlytics);
     on<SettingsEventToggleAnalytics>(_onToggleAnalytics);
     on<SettingsEventIsFirstLaunch>(_onIsFirsLaunch);
+    on<SettingsEventReset>(_onReset);
   }
 
   void _onIsFirsLaunch(
@@ -51,6 +52,13 @@ class SettingsBloc extends HydratedBloc<SettingsEvent, SettingsState> {
     Emitter<SettingsState> emit,
   ) {
     emit(state.copyWith(enableAnalytics: !state.enableAnalytics));
+  }
+
+  void _onReset(
+    SettingsEventReset event,
+    Emitter<SettingsState> emit,
+  ) {
+    emit(SettingsState.empty());
   }
 
   @override

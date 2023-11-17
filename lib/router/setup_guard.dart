@@ -19,7 +19,7 @@ class SetupGuard extends AutoRouteGuard {
     resolver.redirect(const SetupRoute());
     resolver.next(await setupBloc.stream
         .skipWhile((state) => state.isFirstLaunch)
-        .asyncMap((user) => user.isFirstLaunch)
+        .asyncMap((user) => !user.isFirstLaunch)
         .first);
   }
 }

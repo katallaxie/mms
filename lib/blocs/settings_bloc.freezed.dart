@@ -23,6 +23,7 @@ mixin _$SettingsEvent {
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +33,7 @@ mixin _$SettingsEvent {
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +43,7 @@ mixin _$SettingsEvent {
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -54,6 +57,7 @@ mixin _$SettingsEvent {
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,6 +68,7 @@ mixin _$SettingsEvent {
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -74,6 +79,7 @@ mixin _$SettingsEvent {
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -143,6 +149,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) {
     return isFirsLauch();
   }
@@ -155,6 +162,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) {
     return isFirsLauch?.call();
   }
@@ -167,6 +175,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (isFirsLauch != null) {
@@ -186,6 +195,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) {
     return isFirsLauch(this);
   }
@@ -199,6 +209,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) {
     return isFirsLauch?.call(this);
   }
@@ -212,6 +223,7 @@ class _$SettingsEventIsFirstLaunchImpl implements SettingsEventIsFirstLaunch {
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) {
     if (isFirsLauch != null) {
@@ -273,6 +285,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) {
     return toggleSystemBrightness();
   }
@@ -285,6 +298,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) {
     return toggleSystemBrightness?.call();
   }
@@ -297,6 +311,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (toggleSystemBrightness != null) {
@@ -316,6 +331,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) {
     return toggleSystemBrightness(this);
   }
@@ -329,6 +345,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) {
     return toggleSystemBrightness?.call(this);
   }
@@ -342,6 +359,7 @@ class _$SettingsEventToggleSystemBrightnessImpl
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) {
     if (toggleSystemBrightness != null) {
@@ -402,6 +420,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) {
     return toggleDarkMode();
   }
@@ -414,6 +433,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) {
     return toggleDarkMode?.call();
   }
@@ -426,6 +446,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (toggleDarkMode != null) {
@@ -445,6 +466,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) {
     return toggleDarkMode(this);
   }
@@ -458,6 +480,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) {
     return toggleDarkMode?.call(this);
   }
@@ -471,6 +494,7 @@ class _$SettingsEventToggleDarkModeImpl implements SettingsEventToggleDarkMode {
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) {
     if (toggleDarkMode != null) {
@@ -533,6 +557,7 @@ class _$SettingsEventToggleCrashlyticsImpl
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) {
     return toggleCrashlytics();
   }
@@ -545,6 +570,7 @@ class _$SettingsEventToggleCrashlyticsImpl
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) {
     return toggleCrashlytics?.call();
   }
@@ -557,6 +583,7 @@ class _$SettingsEventToggleCrashlyticsImpl
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (toggleCrashlytics != null) {
@@ -576,6 +603,7 @@ class _$SettingsEventToggleCrashlyticsImpl
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) {
     return toggleCrashlytics(this);
   }
@@ -589,6 +617,7 @@ class _$SettingsEventToggleCrashlyticsImpl
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) {
     return toggleCrashlytics?.call(this);
   }
@@ -602,6 +631,7 @@ class _$SettingsEventToggleCrashlyticsImpl
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) {
     if (toggleCrashlytics != null) {
@@ -664,6 +694,7 @@ class _$SettingsEventToggleAnalyticsImpl
     required TResult Function() toggleDarkMode,
     required TResult Function() toggleCrashlytics,
     required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
   }) {
     return toggleAnalytics();
   }
@@ -676,6 +707,7 @@ class _$SettingsEventToggleAnalyticsImpl
     TResult? Function()? toggleDarkMode,
     TResult? Function()? toggleCrashlytics,
     TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
   }) {
     return toggleAnalytics?.call();
   }
@@ -688,6 +720,7 @@ class _$SettingsEventToggleAnalyticsImpl
     TResult Function()? toggleDarkMode,
     TResult Function()? toggleCrashlytics,
     TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (toggleAnalytics != null) {
@@ -707,6 +740,7 @@ class _$SettingsEventToggleAnalyticsImpl
         toggleCrashlytics,
     required TResult Function(SettingsEventToggleAnalytics value)
         toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
   }) {
     return toggleAnalytics(this);
   }
@@ -720,6 +754,7 @@ class _$SettingsEventToggleAnalyticsImpl
     TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
   }) {
     return toggleAnalytics?.call(this);
   }
@@ -733,6 +768,7 @@ class _$SettingsEventToggleAnalyticsImpl
     TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
     TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
     TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
     required TResult orElse(),
   }) {
     if (toggleAnalytics != null) {
@@ -745,6 +781,137 @@ class _$SettingsEventToggleAnalyticsImpl
 abstract class SettingsEventToggleAnalytics implements SettingsEvent {
   const factory SettingsEventToggleAnalytics() =
       _$SettingsEventToggleAnalyticsImpl;
+}
+
+/// @nodoc
+abstract class _$$SettingsEventResetImplCopyWith<$Res> {
+  factory _$$SettingsEventResetImplCopyWith(_$SettingsEventResetImpl value,
+          $Res Function(_$SettingsEventResetImpl) then) =
+      __$$SettingsEventResetImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SettingsEventResetImplCopyWithImpl<$Res>
+    extends _$SettingsEventCopyWithImpl<$Res, _$SettingsEventResetImpl>
+    implements _$$SettingsEventResetImplCopyWith<$Res> {
+  __$$SettingsEventResetImplCopyWithImpl(_$SettingsEventResetImpl _value,
+      $Res Function(_$SettingsEventResetImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SettingsEventResetImpl implements SettingsEventReset {
+  const _$SettingsEventResetImpl();
+
+  @override
+  String toString() {
+    return 'SettingsEvent.reset()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SettingsEventResetImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() isFirsLauch,
+    required TResult Function() toggleSystemBrightness,
+    required TResult Function() toggleDarkMode,
+    required TResult Function() toggleCrashlytics,
+    required TResult Function() toggleAnalytics,
+    required TResult Function() reset,
+  }) {
+    return reset();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? isFirsLauch,
+    TResult? Function()? toggleSystemBrightness,
+    TResult? Function()? toggleDarkMode,
+    TResult? Function()? toggleCrashlytics,
+    TResult? Function()? toggleAnalytics,
+    TResult? Function()? reset,
+  }) {
+    return reset?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? isFirsLauch,
+    TResult Function()? toggleSystemBrightness,
+    TResult Function()? toggleDarkMode,
+    TResult Function()? toggleCrashlytics,
+    TResult Function()? toggleAnalytics,
+    TResult Function()? reset,
+    required TResult orElse(),
+  }) {
+    if (reset != null) {
+      return reset();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(SettingsEventIsFirstLaunch value) isFirsLauch,
+    required TResult Function(SettingsEventToggleSystemBrightness value)
+        toggleSystemBrightness,
+    required TResult Function(SettingsEventToggleDarkMode value) toggleDarkMode,
+    required TResult Function(SettingsEventToggleCrashlytics value)
+        toggleCrashlytics,
+    required TResult Function(SettingsEventToggleAnalytics value)
+        toggleAnalytics,
+    required TResult Function(SettingsEventReset value) reset,
+  }) {
+    return reset(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
+    TResult? Function(SettingsEventToggleSystemBrightness value)?
+        toggleSystemBrightness,
+    TResult? Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
+    TResult? Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
+    TResult? Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult? Function(SettingsEventReset value)? reset,
+  }) {
+    return reset?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(SettingsEventIsFirstLaunch value)? isFirsLauch,
+    TResult Function(SettingsEventToggleSystemBrightness value)?
+        toggleSystemBrightness,
+    TResult Function(SettingsEventToggleDarkMode value)? toggleDarkMode,
+    TResult Function(SettingsEventToggleCrashlytics value)? toggleCrashlytics,
+    TResult Function(SettingsEventToggleAnalytics value)? toggleAnalytics,
+    TResult Function(SettingsEventReset value)? reset,
+    required TResult orElse(),
+  }) {
+    if (reset != null) {
+      return reset(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SettingsEventReset implements SettingsEvent {
+  const factory SettingsEventReset() = _$SettingsEventResetImpl;
 }
 
 SettingsState _$SettingsStateFromJson(Map<String, dynamic> json) {

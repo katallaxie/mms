@@ -107,6 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   leading: MacosIcon(CupertinoIcons.phone),
                   label: Text('Support'),
                 ),
+                SidebarItem(
+                  leading: MacosIcon(CupertinoIcons.device_laptop),
+                  label: Text('Developer'),
+                ),
               ],
             );
           },
@@ -131,6 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
           CupertinoTabView(builder: (_) => const DashboardScreen()),
           const PrivilegesScreen(),
           const SupportScreen(),
+          const DeveloperScreen()
         ][pageIndex],
       ),
     );

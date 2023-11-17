@@ -34,11 +34,11 @@ class RootRouter extends _$RootRouter {
             ),
           ],
         ),
-        AdaptiveRoute(
-          page: SetupRoute.page,
-          path: 'setup',
-        ),
       ],
+    ),
+    AdaptiveRoute(
+      page: SetupRoute.page,
+      path: '/setup',
     ),
     RedirectRoute(path: '*', redirectTo: '/'),
   ];

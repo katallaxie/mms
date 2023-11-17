@@ -9,4 +9,5 @@ sealed class SettingsEvent with _$SettingsEvent {
   const factory SettingsEvent.toggleCrashlytics() =
       SettingsEventToggleCrashlytics;
   const factory SettingsEvent.toggleAnalytics() = SettingsEventToggleAnalytics;
+  const factory SettingsEvent.reset() = SettingsEventReset;
 }

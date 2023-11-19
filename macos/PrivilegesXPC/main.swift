@@ -6,13 +6,22 @@
 //
 
 import SecureXPC
+import os
 
+// Set up new structured logger
+let logger = Logger(subsystem:  "me.katallaxie.PrivilegesXPC", category: "main")
+logger.info("OSLogMessage")
+
+// Set up XPC routing.
 let route = XPCRoute.named("bedazzle")
                     .withMessageType(String.self)
                     .withReplyType(Bool.self)
 
 let server = XPCServer.makeAnonymous()
 server.registerRoute(route, handler: bedazzle)
+
+// Setup the listener and start listening for connections.
+server.startAndBlock()
 
 private func bedazzle(message: String) throws -> Bool {
     return true
